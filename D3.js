@@ -127,6 +127,7 @@ console.log(characters); //come mai il console.log va fatto fuori dal ciclo?
 let femaleCharacters = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
+  // i<-length -> conto quanti elementi in array
   let character = starWarsCharacters[i];
   if (character.gender == "female") {
     femaleCharacters.push(character);
@@ -169,6 +170,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       break;
     case "red":
       eyeColor.red.push(character);
+      break;
     case "blue-gray":
       eyeColor["blue-gray"].push(character);
       break;
