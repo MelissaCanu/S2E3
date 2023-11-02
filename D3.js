@@ -153,10 +153,29 @@ let eyeColor = {
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  let character = starWarsCharacters[i];
-
-  switch ()
+  let character = starWarsCharacters[i]; //prendo l'oggetto
+  switch (
+    character.eye_color //condizione valutata solo 1 volta, all'inizio
+  ) {
+    case "blue": //ricordati, string
+      eyeColor.blue.push(character); //inserisco gli oggetti coi personaggi con proprietà valore eye_color:blue nell'ogetto eyeColor
+      break;
+    case "yellow":
+      eyeColor.yellow.push(character);
+      break;
+    case "brown":
+      eyeColor.brown.push(character);
+      break;
+    case "red":
+      eyeColor.red.push(character);
+    case "blue-gray":
+      eyeColor["blue-gray"].push(character);
+      break;
+    default:
+      console.log("not specified");
+  }
 }
+console.log(eyeColor);
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
