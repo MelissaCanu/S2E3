@@ -130,9 +130,10 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   let character = starWarsCharacters[i];
   if (character.gender == "female") {
     femaleCharacters.push(character);
-    console.log(character);
   }
 }
+
+console.log(femaleCharacters);
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
